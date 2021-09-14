@@ -13,3 +13,6 @@ resources:
 
 components:
 - ../../components/dc
+
+openapi:
+  path: openapi.json

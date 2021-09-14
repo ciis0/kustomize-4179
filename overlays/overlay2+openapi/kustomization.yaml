@@ -5,11 +5,14 @@ resources:
 - ../base/
 
 # configMapGenerator:
-#   - name: cm
-#     literals:
-#       - foo=1
-#     options:
-#       disableNameSuffixHash: true
+# - name: cm
+#   literals:
+#     - foo=2
+#   options:
+#     disableNameSuffixHash: true
 
 components:
 - ../../components/dc
+
+openapi:
+  path: openapi.json

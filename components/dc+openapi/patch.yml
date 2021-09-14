@@ -5,17 +5,12 @@ metadata:
 spec:
   template:
     spec:
-      initContainers:
-        - name: init
       containers:
         - name: container
-          env:
-            - name: foo
-              value: bar
           volumeMounts:
-            - name: cm
-              mountPath: /opt/cm
+            - name: additional-cm
+              mountPath: /mnt
       volumes:
-        - name: cm
+        - name: additional-cm
           configMap:
-            name: cm
+             name: additional-cm
