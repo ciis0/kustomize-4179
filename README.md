@@ -1,4 +1,4 @@
-= Expected Result =
+# Expected Result
 
 ```yaml
 apiVersion: apps.openshift.io/v1
@@ -28,3 +28,11 @@ spec:
           name: cm
         name: cm
 ```
+
+# Issues:
+
+|||
+|-|-|
+|`./demo-overlay.sh`|Patch from Component w/o OpenAPI does *not work*; how to provide a OpenAPI schema globally?|
+|`./demo-overlay+openapi.sh`|Patch from Component w/  OpenAPI in overlay *does work*; really necessary to provide the same OpenAPI file accross overlays?|
+|`./demo-overlay+component-openapi.sh`|Patch from Component w/  OpenAPI in component does *not work*; would have been an option to share OpenAPI between overlays.|
