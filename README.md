@@ -1,3 +1,5 @@
+see https://github.com/kubernetes-sigs/kustomize/issues/4179
+
 # Expected Result
 
 ```yaml
